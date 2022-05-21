@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  padding: 1rem 0.8rem;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 80%;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  color: #000;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+}
+input::placeholder {
+  color: #777;
+}

@@ -1,0 +1,43 @@
+.buttons {
+  height: 4vh;
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 2rem;
+}
+.buttons > * {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+.delete {
+  color: red;
+  border: 1px solid red;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
+.delete:hover {
+  background-color: red;
+  color: #fff;
+}
+.move {
+  color: blue;
+  border: 1px solid blue;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
+.move:hover {
+  background-color: blue;
+  color: #fff;
+}
+.read {
+  color: green;
+  border: 1px solid green;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
+.read:hover {
+  background-color: green;
+  color: #fff;
+}
