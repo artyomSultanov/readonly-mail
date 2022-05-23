@@ -1,5 +1,5 @@
 .nav {
-  width: 12%;
+  width: 15%;
   height: 100vh;
   background-color: #112d32;
   position: fixed;
@@ -28,6 +28,7 @@
 }
 .link {
   height: 100%;
+  font-size: 1rem;
   color: #eee;
   margin: 0;
   display: block;
@@ -45,13 +46,16 @@
 }
 
 .icons {
-  width: 20%;
+  width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-right: 0.5rem;
 }
 .icons > * {
   cursor: pointer;
+}
+.icons > *:hover {
+  color: #777;
 }
 
 .form {
@@ -59,7 +63,9 @@
   left: 0;
 }
 .input {
-  width: 64%;
+  font-family: Inter;
+  height: 100%;
+  width: 70%;
   margin-left: 1rem;
   background: #112d32;
   border: none;
@@ -67,7 +73,4 @@
   outline: none;
   color: #fff;
   font-size: 1rem;
-}
-.input::placeholder {
-  color: #777;
 }

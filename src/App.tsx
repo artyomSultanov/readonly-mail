@@ -1,8 +1,8 @@
-import Router from 'pages';
-import { Suspense } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import Router from 'pages'
+import { Suspense } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
-import './app/styles/index.scss'
+import './app/styles/index.css'
 
 function App() {
   return (
@@ -11,8 +11,7 @@ function App() {
         <Router />
       </Suspense>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
-
+export default App

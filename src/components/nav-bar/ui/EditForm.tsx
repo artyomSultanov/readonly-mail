@@ -1,8 +1,8 @@
 import { FC } from 'react'
-import { FaEdit } from 'react-icons/fa'
+import { FaPen } from 'react-icons/fa'
 import useEditForm from '../model'
 
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 
 const EditForm: FC<{ id: string; title: string }> = ({ id, title }) => {
   const { value, handleSubmit, handleChange, handleEdit, isEdit } =
@@ -14,7 +14,6 @@ const EditForm: FC<{ id: string; title: string }> = ({ id, title }) => {
           <input
             type='text'
             value={value || title}
-            placeholder='Введите название'
             autoComplete='off'
             maxLength={14}
             onChange={handleChange}
@@ -22,7 +21,7 @@ const EditForm: FC<{ id: string; title: string }> = ({ id, title }) => {
           />
         </form>
       ) : null}
-      <FaEdit onClick={handleEdit} />
+      <FaPen onClick={handleEdit} />
     </>
   )
 }

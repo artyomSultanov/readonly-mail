@@ -1,6 +1,6 @@
 import useForm from '../model'
 
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 
 const Form = () => {
   const { value, handleSubmit, handleChange } = useForm()

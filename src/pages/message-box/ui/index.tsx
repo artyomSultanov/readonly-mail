@@ -3,7 +3,7 @@ import { Mail, selectMails } from 'pages/mail-box/model'
 import { Message } from 'pages/mail-box/model'
 import { useParams } from 'react-router-dom'
 
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 
 const MessageBox = () => {
   const { box, id } = useParams()

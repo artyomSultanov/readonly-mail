@@ -3,7 +3,7 @@ import { selectMails, Mail } from '../model'
 import { readMessage } from 'pages/mail-box/model'
 
 import cn from 'classnames'
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 import { NavLink, useParams } from 'react-router-dom'
 import ToolBox from 'components/tool-box'
 import { useState } from 'react'
@@ -43,13 +43,16 @@ const MailBox = () => {
       <ul className={styles.list}>
         {mail?.messages.map((message) => (
           <li key={message.id} className={styleItem(message?.isRead)}>
-            <input
-              type='checkbox'
-              name='message'
-              className={styles.checkbox}
-              checked={checkboxes[message.id]}
-              onChange={() => handleChange(message.id)}
-            />
+            <label className={styles.container}>
+              <input
+                type='checkbox'
+                name='message'
+                className={styles.checkbox}
+                checked={checkboxes[message.id]}
+                onChange={() => handleChange(message.id)}
+              />
+              <span className={styles.mark}></span>
+            </label>
             <NavLink
               to={`${message.id}`}
               className={styles.link}

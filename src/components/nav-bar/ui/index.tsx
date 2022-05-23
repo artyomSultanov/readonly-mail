@@ -12,7 +12,7 @@ import { FaTrash } from 'react-icons/fa'
 
 import cn from 'classnames'
 
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 import CreateForm from 'components/create-form'
 import EditForm from './EditForm'
 import useEditForm from '../model'
