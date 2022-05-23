@@ -15,10 +15,10 @@ const MessageBox = () => {
     <main className={styles.main}>
       <div className={styles.info}>
         <h2 className={styles.name}>{message?.name}</h2>
-        <h4 className={styles.email}>{message?.email}</h4>
-        <h3 className={styles.date}>{message?.date}</h3>
+        <span className={styles.email}>{message?.email}</span>
+        <span className={styles.date}>{message?.date}</span>
       </div>
-      <div className={styles.content}>{message?.content}</div>
+      <p className={styles.content}>{message?.content}</p>
     </main>
   )
 }
